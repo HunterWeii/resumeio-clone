@@ -1,0 +1,33 @@
+@import "~styles/variables/font.scss";
+@import "~styles/variables/color.scss";
+
+/* general component */
+
+.font {
+  &-primary { font-family: $app-primary; }
+  &-secondary { font-family: $app-secondary; }
+  &-editor {
+    &-primary { font-family: $editor-primary; }
+  }
+
+  color: $app-font-color;
+}
+
+/* Specific component */
+
+.block_title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+
+.block_sub_title {
+  font-size: 12px;
+  font-weight: 500;
+  color: $app-title-color;
+}
+
+.input_title {
+  font-size: 13px;
+  color: $app-title-color;
+}

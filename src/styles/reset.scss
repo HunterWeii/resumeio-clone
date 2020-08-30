@@ -1,0 +1,31 @@
+@import "./mixins/vendor";
+@import "./variables/font";
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  @include vendor(box-sizing, border-box);
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: $app-primary;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+.test {
+  margin: 50px;
+  width: 40%;
+  &-fly { 
+    margin-bottom: 10px;
+    &-big { margin-bottom: 30px; }
+  }
+}

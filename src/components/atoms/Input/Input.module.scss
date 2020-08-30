@@ -1,0 +1,22 @@
+@import "~styles/variables/font.scss";
+@import "~styles/variables/color.scss";
+
+.input {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  border-radius: 3px;
+  background-color: $app-background-input;
+  font-family: $app-secondary;
+  color: $app-font-color;
+
+  &:focus {
+    outline: none;
+  }
+
+  &-focusable {
+    &:focus + * {
+      transform: scale(1)
+    }
+  }
+}

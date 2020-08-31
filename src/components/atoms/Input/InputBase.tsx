@@ -3,13 +3,13 @@ import classNames from 'classnames';
 import style from "./Input.module.scss";
 
 type InputBaseProps = {
-  inputClass ?: string,
+  inputclass ?: string,
   value ?: any,
   onInputChange ?: React.FormEventHandler<HTMLInputElement>
 }
 
 const InputBase = (props: InputBaseProps) => {
-  const className = classNames( style.input, props.inputClass );
+  const className = classNames( style.input, props.inputclass );
   return (
     <input 
       { ...props }

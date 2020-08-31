@@ -6,7 +6,7 @@ import style from "../Input.module.scss";
 const InputFocus = (props: any) => {
   return (
     <FocusBase>
-      <InputBase {...props} inputClass={style['input-focusable']} />
+      <InputBase {...props} inputclass={style['input-focusable']} />
     </FocusBase>
   )
 };
